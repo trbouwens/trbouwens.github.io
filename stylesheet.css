@@ -1,0 +1,122 @@
+/* Background: 1d1f21 */
+
+body {
+  background-color: #1d1f21;
+}
+
+#nameplate {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f92672;
+}
+
+#sub1 {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fd9721;
+}
+
+#sub2 {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fd9721;
+}
+
+#sub3 {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #9effff;
+}
+
+#link1 {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #9effff;
+}
+
+#link2 {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ae81ff;
+}
+
+#sidebar_t {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#sidebar_c {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#body_head {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#body_text {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#text_link {
+  color: #9effff;
+}
+
+#text_head {
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f92672;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover, a:active {
+  color: #cccccc;
+}
+
+.blink:hover {
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite
+    -o-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+    cursor: pointer;
+}
+
+@-webkit-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-moz-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@-o-keyframes blink {
+  67% { opacity: 0 }
+}
+
+@keyframes blink {
+  67% { opacity: 0 }
+}
