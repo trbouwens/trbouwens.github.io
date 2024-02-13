@@ -116,7 +116,6 @@ function xShow(name) {
 };
 
 function xOut(name) {
-  console.log(name);
   var div = document.getElementById(name + 'Window');
   var task = document.getElementById(name + "Task");
   div.style.display = 'none';
@@ -126,3 +125,22 @@ function xOut(name) {
 // var xbutton = document.getElementById('aboutWindowX');
 // xbutton.onclick = xOut(xbutton);
 
+var sites = ["https://www.youtube.com/watch?v=daEaMbexIyg", 
+"https://www.youtube.com/watch?app=desktop&v=K_sPVLjZklE", "https://www.youtube.com/watch?v=S82jfxfNLbs", 
+"https://www.youtube.com/watch?v=IMUeM9g0PGE", "https://www.youtube.com/watch?v=qbjwNU-72ss", 
+"https://www.youtube.com/watch?v=KsjAOPvQgII", "https://www.youtube.com/watch?v=sdOpnvJbjc0", 
+"https://www.youtube.com/watch?v=Vgc_GLVvkYk", "https://www.youtube.com/watch?v=-Wnsdbv3SFg", 
+"https://www.youtube.com/watch?v=JE2pEroh8QI", "https://www.youtube.com/watch?v=J4q4k2ppkUM", 
+"https://www.youtube.com/watch?v=5KMKLpYvuEo", "https://www.youtube.com/watch?v=YS8jryBA-7Y", 
+"https://www.youtube.com/watch?app=desktop&v=8LCmC7bh_qU", "https://www.youtube.com/watch?v=-QZ86Q0cytg", 
+"https://www.youtube.com/watch?v=CTV-wwszGw8", "https://www.youtube.com/watch?v=0rMXZ1EpHBs", 
+"https://biosector01.com/wiki/BIONICLE.com", "http://make-everything-ok.com/", "http://voteonourson.com/", 
+"https://www.thisman.org/", "https://biggulpsupreme.neocities.org/pipes.gif", "https://www.sometimesredsometimesblue.com/", 
+"https://www.blankwindows.com/", "http://www.milliondollarhomepage.com/", "http://eelslap.com/", "https://hmpg.net/", 
+"https://www.itwillneverbethesame.com/", "https://wwwwwwwww.jodi.org/", "https://kanite.net/", "https://puginarug.com/", 
+"https://onesquareminesweeper.com/", "http://corndog.io/"];
+
+function randSite() {
+  window.location.reload();
+  return sites[Math.floor(Math.random()*sites.length)];
+}
