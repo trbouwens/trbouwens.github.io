@@ -1,35 +1,112 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet.css">
+<header>
+    <link rel="icon" href="img/logo.png">
 
-<html>
-  <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="stylesheet2.css" type="text/css" charset="utf-8" />
-    <link rel="icon" href="logo.png">
-
-  </head>
-
-  <body>
-    <br>
-    <span id="nameplate"> > Tyler Bouwens</span>
-    <br>
-    <span id="sub1"> > </span> <span id="sub2"> Computer Science Student / Future Software Engineer </span>
-    <br>
-    <span id="sub3"> > </span>
-    <a href="https://github.com/trbouwens"> <span id="link1" class="blink"> [github] </span> </a>
-    <a href="https://www.linkedin.com/in/tyler-bouwens-755b1513b/"> <span id="link2" class="blink"> [linkedin] </span> </a>
-    <a href="mailto:trbouwens@wpi.edu"> <span id="link1" class="blink"> [email] </span> </a>
-    <a href="Resume2019.pdf"> <span id="link2" class="blink"> [resume] </span> </a>
-    <span id="link1" class="blink"> <a href ="about.html" target="iframe_a" id="link1", style="text-decoration:none;"> [documentation] </a></span>
-    <hr> <br>
-    <div class="sidebar">
-      <span id="sidebar_t">~/Projects$: </span>
-      <iframe height="720px" width="85%" src="about.html" name="iframe_a" align = right></iframe>
-      <br><br> <span id="sidebar_c"> <a href ="greek.html" target="iframe_a", style="text-decoration:none;">&nbsp; Random Greek Life &nbsp;&nbsp;Generator</a></span>
-      <br><br> <span id="sidebar_c"> <a href ="phone/phoneH.html" target="iframe_a", style="text-decoration:none;">&nbsp; Worst Phone Number &nbsp;&nbsp;Input</a></span>
-      <!–-
-      <br <br <span id="sidebar_c" &nbsp; Project 4 </span
-      -->
-
+    <div id="menubar">
+        <div id="nameplate"><b>tylerbouwens.com</b></div>
+        <div id="nameplate", class="dropdown">
+            Help
+            <div class="dropdown-content">
+                <a href="https://blog.hubspot.com/">Blog</a>
+                <a href="https://academy.hubspot.com/">Academy</a>
+                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+            </div>
+        </div>
+        <div id="menupad"></div>
+        <div id ="dataplate">
+            <div id="date">Date</div>
+            <div>|</div>
+            <div id="clock">Time</div>
+        </div>
     </div>
-  </body>
+</header>
+
+<body>
+
+<div id="desktop">
+
+    <!-- <button id='button'>Click</button> -->
+    <div class="deskIcon", ondblclick="xShow('about')"><img class="ico" src="img/about.png"><div class="deskText">Readme</div></div>
+    <div class="deskIcon", ondblclick="xShow('mycom')"><img class="ico" src="img/mycom.png"><div class="deskText">My Site</div></div>
+    <div class="deskIcon", ondblclick="xShow('projs')"><img class="ico" src="img/projs.png"><div class="deskText">Projects</div></div>
+    <div class="deskIcon", ondblclick="xShow('notes')"><img class="ico" src="img/notes3.png"><div class="deskText">Notepad</div></div>
+    <div class="deskIcon"><img class="ico" src="img/recycle.png"><div class="deskText">Trash</div></div>
+
+
+    <div class="window" id="aboutWindow">
+        <div class="windowheader" id="aboutWindowHeader">Readme
+            <button class='xbutton' id="aboutWindowX" onclick="xOut('about')"><b>X</b></button>
+        </div>
+        <div class="windowbody" id="aboutWindowBody">
+            <p>
+                Hi, my name is Tyler (he/him). I’m a graduate of Worcester Polytechnic Institute (WPI) 
+                with a bachelor's degree in Computer Science, with a minor in Data Science. I received 
+                nomination and induction into both Upsilon Pi Epsilon, the Computer Science honour society,
+                as well as Alpha Psi Omega, the Theatre honour society. 
+                I love programming, problem solving, and research. 
+
+                <br><br>Presently, I'm looking for a job opportunity in Software Engineering or Data Science, 
+                either in Massachussetts or Remote. 
+                I have two years experience as a Software Engineer with Cloud Software Group, specifically TIBCO Streambase, as well as a sumemr of interning with them. 
+                I also worked as a Student Teaching Assistant for computer science classes throughout my final two years at WPI. 
+                Classes ranged from Python, Racket, CompSci ethics, C/C++, and Assembly classes. 
+                <br>My detailed resume can be found in the "My Site" tab, or from the "Help" dropdown.
+
+                <br><br>This site serves as a home for my links, projects, and any other creations of mine I wish to share. 
+
+                <br><br>Feel free to drag these windows around, or double click the desktop icons to play with the other functionalities of this site.
+                </p>
+        </div>
+    </div> 
+
+    <div class="window" id="mycomWindow">
+        <div class="windowheader" id="mycomWindowHeader">My Site
+            <button class='xbutton' id="mycomWindowX" onclick="xOut('mycom')"><b>X</b></button>
+        </div>
+        <div class="windowbody" id="mycomWindowBody">
+            <div class="winIcon", ondblclick="window.open('https\://github.com/trbouwens', '_blank');"><img class="ico" src="img/git.png"><div class="winText">Github</div></div>
+            <div class="winIcon", ondblclick="window.open('https\://www.linkedin.com/in/tyler-bouwens-755b1513b/', '_blank');"><img class="ico" src="img/linkedin.png"><div class="winText">Linkedin</div></div>
+            <div class="winIcon", ondblclick="window.location = 'mailto:tybo1231@gmail.com';"><img class="ico" src="img/mail.png"><div class="winText">Email</div></div>
+            <div class="winIcon", ondblclick="window.open('resume_1.0.pdf');"><img class="ico" src="img/notes.png"><div class="winText">Resume</div></div>
+        </div>
+    </div> 
+
+    <div class="window" id="projsWindow">
+        <div class="windowheader" id="projsWindowHeader">Projects
+            <button class='xbutton' id="projsWindowX" onclick="xOut('projs')"><b>X</b></button>
+        </div>
+        <div class="windowbody" id="projsWindowBody">
+            This window will eventually hold writeups for my personal/hobby projects. 
+            At the moment I haven't done any writeups, but feel free to take a look at my github
+            to see what few projects I have there. 
+        </div>
+    </div> 
+
+    <div class="window" id="notesWindow">
+        <div class="windowheader" id="notesWindowHeader">Notepad
+            <button class='xbutton' id="notesWindowX" onclick="xOut('notes')"><b>X</b></button>
+        </div>
+        <div class="windowbody" id="notesWindowBody">
+            Edit me! More text editor functionalities coming soon. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div> 
+</div>
+
+<div id="taskbar">
+    <img src="img/logo.png"></img>
+    <div id="start"><span id="stext">WELCOME</span></div>
+    <div id="aboutTask", class="task"><img src="img/about2.png"></img>ABOUT</div>
+    <div id="mycomTask", class="task"><img src="img/mycom2.png"></img>MY SITE</div>
+    <div id="projsTask", class="task"><img src="img/projs2.png"></img>PROJECTS</div>
+    <div id="notesTask", class="task"><img src="img/notes2.png"></img>NOTEPAD</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>

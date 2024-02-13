@@ -1,122 +1,317 @@
-/* Background: 1d1f21 */
+@font-face {
+  font-family: 'bitstream_vera_sans_monoroman';
+  src: url('VeraMono-webfont.eot');
+  src: url('VeraMono-webfont.eot?#iefix') format('embedded-opentype'),
+       url('VeraMono-webfont.woff2') format('woff2'),
+       url('VeraMono-webfont.woff') format('woff'),
+       url('VeraMono-webfont.ttf') format('truetype'),
+       url('VeraMono-webfont.svg#bitstream_vera_sans_monoroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body { 
+  height: 98%; 
+}
 
 body {
-  background-color: #1d1f21;
+  padding: 0px;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
+}
+
+#menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 98.3%;
+  height: 3.5%;
+  background-color: #686f82;
+  float: left, top;
+  border-top: 1px solid #444444;
+  border-left: 1px solid #444444;
+  border-bottom: 3px solid #444444;
+  border-right: 3px solid #444444;
+  padding-left: 0.5%;
+  padding-right: 1%;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
 }
 
 #nameplate {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 48px;
+  border-top: 1px solid #c7c7c7;
+  border-left: 1px solid #c7c7c7;
+  border-bottom: 1px solid #444444;
+  border-right: 2px solid #444444;
+  padding-top: 3px;
+  padding-left : 21px; 
+  padding-right: 21px;
+  color: #ececec;
+  text-decoration-thickness: 3px
+}
+
+#menupad {
+  width: 71%;
+}
+
+#desktop {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  /* height: auto; */
+
+  background-color: #883b52;
+  height: 90%;
+  padding: 1%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* #desktop > div {
+  
+} */
+
+.deskIcon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  height: 72px;
+  width: 72px;
+
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+.deskText {
+  display: flex;
+  height: 16px;
+  color: #ececec;
+  text-decoration-thickness: 3px
+}
+
+.winIcon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  height: 72px;
+  width: 72px;
+
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+.winText {
+  display: flex;
+  height: 16px;
+  color: #000000;
+  text-decoration-thickness: 3px
+}
+
+.ico {
+  display: flex;
+  height: 48px;
+  width: 48px;
+}
+
+#taskbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 19px;
+
+  width: 98.4%;
+  height: 5%;
+  background-color: #686f82;
+  float: bottom;
+  position: absolute; 
+  bottom: 0;
+
+  border-top: 2px solid #444444;
+  border-left: 2px solid #444444;
+
+  padding-left: 0.5%;
+  padding-right: 1%;
+  padding-top: 0.35%;
+  padding-bottom: 0.35%;
+}
+
+#start {
+  border-bottom: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  border-top: 1px solid #444444;
+  border-left: 1px solid #444444;
+  background-color: #7e869e;
+  padding-top: 5px;
+  padding-left : 20px; 
+  padding-right: 20px;
+  color: #ececec;
+  text-decoration-thickness: 3px;
+  font-size: 35px;
+  letter-spacing: 5px;
+
+  display: flex;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+.task {
+  border-top: 2px solid #c7c7c7;
+  border-left: 2px solid #c7c7c7;
+  border-bottom: 3px solid #444444;
+  border-right: 3px solid #444444;
+
+  padding-top: 5px;
+  padding-left : 10px; 
+  padding-right: 10px;
+  color: #ececec;
+  text-decoration-thickness: 3px;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: left; /* Align horizontal */
+  align-items: center; /* Align vertical */
+  gap: 9px;
+}
+
+#stext {
   font-weight: bold;
-  color: #f92672;
+  background: linear-gradient(to right, #ff0400,#ff0400, #f58b00, #f1ed00, #05f819, #06d3ee, #0602f5, #8c02fd, #8c02fd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#sub1 {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 48px;
+#dataplate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 9%;
+  border-bottom: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  border-top: 1px solid #444444;
+  border-left: 1px solid #444444;
+  padding-left : 21px; 
+  padding-right: 21px;
+  padding-top: 3px;
   font-weight: bold;
-  color: #fd9721;
+  color: #ececec;
 }
 
-#sub2 {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  color: #fd9721;
+.window {
+  position: absolute;
+  z-index: 9;
+  background-color: #c8acab;
+  padding: 3px;
+  /* width: 40%; */
+  border-top: 3px solid #c7c7c7;
+  border-left: 3px solid #c7c7c7;
+  border-bottom: 3px solid #444444;
+  border-right: 3px solid #444444;
+  text-align: center;
+}
+  
+.windowheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #686f82;
+  /* border-top: 1px solid #444444;
+  border-left: 1px solid #444444;
+  border-bottom: 3px solid #444444;
+  border-right: 3px solid #444444; */
+  color: #fff;
 }
 
-#sub3 {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 48px;
-  font-weight: bold;
-  color: #9effff;
+#aboutWindow {
+  width: 40%;
 }
 
-#link1 {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #9effff;
+#mycomWindow {
+  width: 25%;
 }
 
-#link2 {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #ae81ff;
+#projsWindow {
+  width: 30%;
 }
 
-#sidebar_t {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
+#notesWindow {
+  width: 30%;
+  height: 69%;
 }
 
-#sidebar_c {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
+#mycomWindowBody {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5%;
+  padding: 5%;
+  padding-left: 10%; padding-right: 10%;
+  justify-content: space-between;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black; */
 }
 
-#body_head {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
+#notesWindowBody { 
+  background-color: #fff;
+  height: 91%;
+  word-wrap: break-word;
+  text-align: justify;
+  text-align-last: left;
 }
 
-#body_text {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
+.xbutton {
+  cursor: pointer;
+  width: 25px;
+  height: auto;
+  float: right;
+  padding: 0px;
+  border-radius: 0;
+  /* background-color: #7e869e; */
 }
 
-#text_link {
-  color: #9effff;
+.windowbody {
+  padding: 1%;
 }
 
-#text_head {
-  font-family: 'bitstream_vera_sans_monoroman', Courier, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #f92672;
+.dropdown {
+  z-index: 99;
+  display: inline-block;
+  position: relative;
 }
-
-a:link {
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 400%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: #686f82;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 1px;
   text-decoration: none;
+  border-top: 1px solid #c7c7c7;
+  border-left: 1px solid #c7c7c7;
+  border-bottom: 1px solid #444444;
+  border-right: 1px solid #444444;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #7e869e;
 }
 
-a:visited {
-  color: #ffffff;
-}
-
-a:hover, a:active {
-  color: #cccccc;
-}
-
-.blink:hover {
-    -webkit-animation: blink 1s step-end infinite;
-    -moz-animation: blink 1s step-end infinite
-    -o-animation: blink 1s step-end infinite;
-    animation: blink 1s step-end infinite;
-    cursor: pointer;
-}
-
-@-webkit-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@-moz-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@-o-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@keyframes blink {
-  67% { opacity: 0 }
-}
+/* 
+Background: #4682b4 
+Windows: #c8b2ab
+*/
